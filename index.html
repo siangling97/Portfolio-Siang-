@@ -321,6 +321,7 @@
         transition: gap 0.2s;
       }
       .project-link:hover { gap: 0.6rem; }
+      .project-links { display: flex; flex-wrap: wrap; gap: 1.2rem; }
 
       /* ── ABOUT ── */
       #about { background: var(--bg); }
@@ -525,27 +526,33 @@
       <div class="section-inner">
         <div class="section-label">Portfolio</div>
         <h2 class="section-title">My Projects</h2>
-        <p class="section-sub">A selection of full-stack applications I've designed, built, and deployed.</p>
+        <p class="section-sub">Projects I've built and deployed, with live demos and source code.</p>
 
         <div class="projects-grid">
           <div class="project-card">
-            <div class="project-icon">🎬</div>
-            <h3>We Love Movies</h3>
-            <p>A full-stack movie discovery app where users can browse currently playing films, read critic reviews, vote reviews up or down, and find which local theaters are showing each movie.</p>
-            <ul class="tech-tags">
-              <li>React</li><li>Bootstrap</li><li>Node.js</li><li>Express</li><li>Knex</li><li>PostgreSQL</li>
-            </ul>
-            <a href="https://we-love-movies-frontend-gamma.vercel.app/" class="project-link" target="_blank" rel="noopener">View Live →</a>
-          </div>
-
-          <div class="project-card">
             <div class="project-icon">🍽️</div>
             <h3>Restaurant Reservation System</h3>
-            <p>A reservation management dashboard for restaurant front-of-house staff. Features date-based views, table assignment, seat tracking, mobile-number search, and reservation editing.</p>
+            <p>A reservation dashboard for restaurant staff: create, edit, search, seat, and cancel reservations. I wrote the React front end and the Express/PostgreSQL API, with server-side validation and transactional seating. Thinkful capstone.</p>
             <ul class="tech-tags">
               <li>React</li><li>Node.js</li><li>Express</li><li>Knex</li><li>PostgreSQL</li>
             </ul>
-            <a href="https://system-ay7r.vercel.app/dashboard" class="project-link" target="_blank" rel="noopener">View Live →</a>
+            <div class="project-links">
+              <a href="https://system-ay7r.vercel.app/dashboard" class="project-link" target="_blank" rel="noopener">View Live →</a>
+              <a href="https://github.com/siangling97/System-" class="project-link" target="_blank" rel="noopener">Code →</a>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-icon">🎬</div>
+            <h3>We Love Movies — REST API</h3>
+            <p>The REST API behind a movie-listing site: now-showing movies, theaters, and critic reviews with voting. I built the Express/Knex/PostgreSQL back end; Thinkful supplied the React front end.</p>
+            <ul class="tech-tags">
+              <li>Node.js</li><li>Express</li><li>Knex</li><li>PostgreSQL</li>
+            </ul>
+            <div class="project-links">
+              <a href="https://we-love-movies-frontend-gamma.vercel.app/" class="project-link" target="_blank" rel="noopener">View Live →</a>
+              <a href="https://github.com/siangling97/we-love-movies-backend-" class="project-link" target="_blank" rel="noopener">API Code →</a>
+            </div>
           </div>
 
           <div class="project-card">
@@ -575,8 +582,8 @@
           </div>
           <div class="about-content">
             <p>
-              Hi, I'm Siang Ling — a full-stack developer based in Kansas with a passion for building things people actually enjoy using.
-              I completed the Chegg Skills Software Engineering Bootcamp, where I shipped full-stack projects from wireframe to deployment.
+              I'm Siang Ling, a full-stack developer in Kansas City. I completed Thinkful's software engineering program in 2024 while working full-time at Amazon,
+              and I'm now studying Computer Science at SNHU (graduating February 2027). I build with JavaScript, React, Node.js, Express, and PostgreSQL.
             </p>
             <p>
               I thrive in collaborative environments, enjoy digging into hard problems, and take pride in writing code that's readable and maintainable.
@@ -586,13 +593,17 @@
             <div class="skills-section">
               <h4>Tech Stack</h4>
               <div class="skills-grid">
+                <div class="skill-group" style="grid-column: 1 / -1;">
+                  <h5>Languages</h5>
+                  <p>JavaScript (ES6+), SQL, HTML5, CSS3 · Java and Python (SNHU coursework)</p>
+                </div>
                 <div class="skill-group">
                   <h5>Frontend</h5>
-                  <p>React, JavaScript (ES6+), HTML5, CSS3, Bootstrap</p>
+                  <p>React, Bootstrap, responsive layouts</p>
                 </div>
                 <div class="skill-group">
                   <h5>Backend</h5>
-                  <p>Node.js, Express, Python, RESTful APIs</p>
+                  <p>Node.js, Express, RESTful APIs</p>
                 </div>
                 <div class="skill-group">
                   <h5>Database</h5>
